@@ -22,6 +22,7 @@ namespace StrombergAmpel
 		
 		public string returnStatus { get; set; }
 		public string returnImage { get; set; }
+		public string returnTime { get; set; }
 		
 		public flowtrail_functions()
 		{
@@ -50,6 +51,8 @@ namespace StrombergAmpel
 				returnStatus = "Fehler beim Verbinden mit http://www.flowtrail-stromberg.de.";
 			}
 			
+			//9:30h bis 19:00h
+				
 			nv_indexOfPicture = sv_sourcecode.IndexOf("ampelmann-gruen-rechts.png");
 			if(nv_indexOfPicture > 0)
 			{
